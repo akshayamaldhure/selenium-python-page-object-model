@@ -109,4 +109,4 @@ venv.bak/
 *.txt
 /report/*
 /reports/*
-resources/*
+screenshots/*
