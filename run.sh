@@ -3,7 +3,7 @@
 SERVER_URL="http://someserver.com"
 WWW_REPORTS_DIR="server_report_dir"
 LOCAL_REPORTS_DIR="reports"
-VENV_NAME="selenium-pom-python"
+VENV_NAME="selenium-pom-python-venv"
 REPORT_DIR_NAME=`date +'%d-%m-%Y-%H-%M-%S'`
 if test ! -d reports/; then
     echo "reports directory not found, creating the same"

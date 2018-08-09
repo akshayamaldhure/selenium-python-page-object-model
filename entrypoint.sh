@@ -7,7 +7,7 @@ TEST_SKIP_MESSAGE="*[$TEST_ENV] One or more services required for the tests are 
 TEST_FAIL_MESSAGE="*[$TEST_ENV] One or more tests from one or more suites have failed.* :cry:"
 TEST_PASS_MESSAGE="*[$TEST_ENV] All tests from all suites have passed.* :dancing_panda:"
 if [ $# -eq 0 ]; then
-    declare -a ALL_TEST_SUITES=("login_tests")
+    declare -a ALL_TEST_SUITES=("LoginTests")
 else
     declare -a ALL_TEST_SUITES=($@)
 fi
