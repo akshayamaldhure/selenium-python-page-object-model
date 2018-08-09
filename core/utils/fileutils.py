@@ -6,8 +6,8 @@ from core.common.constants import Global
 
 
 def capture_screenshot(driver, target_path=os.path.join(Global.SCREENSHOTS_DIR, "screenshot.png")):
-    with lcc.prepare_attachment(filename=target_path, description="Click here to view the screenshot") as filename:
-        driver.save_screenshot(filename=filename)
+    driver.save_screenshot(target_path)
+    lcc.save_attachment_file(filename=target_path, description="Click here to view the screenshot")
 
 
 def delete_file(file_path):
