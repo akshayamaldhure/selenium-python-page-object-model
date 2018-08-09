@@ -9,6 +9,6 @@ class Base:
 def init_session():
     config = get_config_object()
     print "Test environment: {}".format(config.ENVIRONMENT)
-    print "Users base URL: {}".format(config.TYPICODE_BASE_URL)
+    print "URL under test: {}".format(config.AUTOMATION_PRACTICE_URL)
     Base.ENVIRONMENT = config.ENVIRONMENT
-    Base.USER_BASE_URL = config.TYPICODE_BASE_URL
+    Base.USER_BASE_URL = config.AUTOMATION_PRACTICE_URL

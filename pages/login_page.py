@@ -3,11 +3,14 @@ from selenium.webdriver.common.by import By
 from pages.base_page import BasePage
 from pages.locators import *
 
+from core.conf.environments.config import get_config_object
+
 
 class LoginPage(BasePage):
     def __init__(self, driver):
         self.driver = driver
-        self.driver.get("http://automationpractice.com/index.php?controller=authentication&back=my-account")
+        config = get_config_object()
+        self.driver.get(config.AUTOMATION_PRACTICE_URL)
 
     email = (By.ID, EMAIL_ID)
     password = (By.ID, PASSWORD_ID)

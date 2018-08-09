@@ -3,7 +3,7 @@ from core.conf.environments.base import BaseConfig
 
 class Config(BaseConfig):
     ENVIRONMENT = "default"
-    TYPICODE_BASE_URL = "https://jsonplaceholder.typicode.com/"
+    AUTOMATION_PRACTICE_URL = "http://automationpractice.com/index.php?controller=authentication&back=my-account"
 
 
 class Prod(BaseConfig):
