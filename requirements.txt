@@ -1,0 +1,13 @@
+certifi==2018.4.16
+chardet==3.0.4
+colorama==0.3.9
+idna==2.7
+lemoncheesecake
+requests==2.19.1
+six==1.11.0
+slackclient==1.2.1
+termcolor==1.1.0
+terminaltables==3.1.0
+urllib3==1.23
+websocket-client==0.48.0
+selenium
